@@ -65,14 +65,16 @@ Durante o desenvolvimento foram aplicados conceitos de:
 
 ## 🧠 Recursos DAX Utilizados
 
-Este projeto utiliza funções de Inteligência Temporal para realizar comparações entre períodos, incluindo:
+O dashboard foi desenvolvido utilizando medidas em DAX para análise comparativa entre períodos, com destaque para funções de Inteligência Temporal (Time Intelligence), como:
 
-- Comparação Ano Atual × Ano Anterior (Year over Year - YoY)
-- Comparação Mês Atual × Mês Anterior (Month over Month - MoM)
-- Faturamento Acumulado (Running Total)
-- Comparação de Acumulados
-- Cálculo de variações percentuais
-- Medidas dinâmicas para atualização automática conforme os filtros aplicados
+- **CALCULATE** para modificar o contexto de filtro e construir medidas dinâmicas.
+- **DATEADD** para comparar o desempenho entre períodos deslocados (mês anterior e ano anterior).
+- **SAMEPERIODLASTYEAR** para análise de faturamento em relação ao mesmo período do ano anterior.
+- Cálculo de Faturamento Acumulado (Running Total).
+- Comparação entre o faturamento atual e o ano anterior (Year over Year - YoY).
+- Comparação entre o faturamento atual e o mês anterior (Month over Month - MoM).
+- Cálculo de diferenças absolutas e percentuais entre períodos.
+- Atualização dinâmica dos indicadores conforme os filtros aplicados.
 
 ---
 
@@ -93,12 +95,20 @@ Todos os visuais são interativos, possibilitando explorar os dados de forma din
 
 ---
 
-## 🛠️ Tecnologias
+## 🛠️ Técnicas Utilizadas
 
-- Power BI
-- DAX
-- Power Query
+Durante o desenvolvimento foram aplicados conceitos de:
+
 - Modelagem de Dados
+- Power Query
+- DAX
+- Inteligência Temporal (Time Intelligence)
+- Funções DAX como `CALCULATE`, `DATEADD` e `SAMEPERIODLASTYEAR`
+- Comparação entre períodos (YoY e MoM)
+- KPIs comerciais
+- Storytelling com dados
+- Visualização de dados
+- Boas práticas em Power BI
 
 ---
 
